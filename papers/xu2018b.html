@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A Warning Propagation-Based Linear-Time-and-Space Algorithm for the Minimum Vertex Cover Problem on Giant Graphs | Hong Xu (許弘)</title>
+<link href="../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="canonical" href="http://www.hong.me/papers/xu2018b.html">
+<link rel="icon" href="../images/wordcloud.png" sizes="16x16">
+<link rel="icon" href="../images/wordcloud.png" sizes="128x128">
+<!--[if lt IE 9]><script src="../assets/js/html5.js"></script><![endif]--><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script><style>
+    .publication-abstract {
+        text-align: justify;
+        hyphens: auto;
+        -webkit-hyphens: auto;
+        -moz-hyphens: auto;
+        -ms-hyphens:auto;
+     }
+    </style>
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-expand-md static-top mb-4
+navbar-dark
+bg-dark
+"><div class="container">
+<!-- This keeps the margins nice -->
+        <a class="navbar-brand" href="../">
+
+            <span id="blog-title">Hong Xu (許弘)</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="bs-navbar">
+            <ul class="navbar-nav mr-auto">
+<li class="nav-item">
+<a href="https://scholar.google.com/citations?user=CLG-HO8AAAAJ" class="nav-link">Google Scholar</a>
+                </li>
+<li class="nav-item">
+<a href="http://dblp.uni-trier.de/pers/hd/x/Xu_0003:Hong" class="nav-link">dblp</a>
+
+                
+            </li>
+</ul>
+<!-- DuckDuckGo custom search --><form method="get" id="search" action="https://duckduckgo.com/" class="navbar-form navbar-right">
+<input type="hidden" name="sites" value="http://www.hong.me/"><input type="hidden" name="k8" value="#444444"><input type="hidden" name="k9" value="#D51920"><input type="hidden" name="kt" value="h"><input type="text" name="q" maxlength="255" placeholder="Search…" class="span2" style="margin-top: 4px; border-radius: 0.4em;"><input type="submit" value="DuckDuckGo Search" style="visibility: hidden;">
+</form>
+<!-- End of custom search -->
+
+
+            <ul class="navbar-nav navbar-right"></ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+        
+        
+    <header class="page-header"><h1>A Warning Propagation-Based Linear-Time-and-Space Algorithm for the Minimum Vertex Cover Problem on Giant Graphs</h1>
+    </header><div class="reference">
+    <p>
+    <strong>Hong Xu</strong>, Kexuan Sun, Sven Koenig, and T. K. Satish Kumar.
+<a href="http://www.hong.me/papers/xu2018b.html"><strong>A warning propagation-based linear-time-and-space algorithm for the minimum vertex cover problem on giant graphs.</strong></a>
+In <em>Proceedings of the 15th International Conference on the Integration of Constraint Programming, Artificial Intelligence, and Operations Research (CPAIOR)</em>, 567–584. 2018.
+<a href="https://doi.org/10.1007/978-3-319-93031-2_41">doi:10.1007/978-3-319-93031-2_41</a>.
+            <br>[<a href="http://files.hong.me/papers/xu2018b.pdf">full text</a>] [<a href="http://files.hong.me/papers/xu2018b-slides.pdf">slides</a>] 
+            [<a href="javascript:void(0)" onclick="
+            (function(target, id) {
+              if ($('#' + id).css('display') == 'block')
+              {
+                $('#' + id).hide('fast');
+                $(target).text('BibTeX▼')
+              }
+              else
+              {
+                $('#' + id).show('fast');
+                $(target).text('BibTeX▲')
+              }
+            })(this, 'bibtex-xu2018b');">BibTeX▼</a>]
+            </p>
+<div id="bibtex-xu2018b" style="display:none"><pre>@inproceedings{xu2018b,
+    author = "Xu, Hong and Sun, Kexuan and Koenig, Sven and Kumar, T. K. Satish",
+    title = "A Warning Propagation-Based Linear-Time-and-Space Algorithm for the Minimum Vertex Cover Problem on Giant Graphs",
+    year = "2018",
+    booktitle = "Proceedings of the 15th International Conference on the Integration of Constraint Programming, Artificial Intelligence, and Operations Research (CPAIOR)",
+    customlinkslides = "http://files.hong.me/papers/xu2018b-slides.pdf",
+    doi = "10.1007/978-3-319-93031-2\_41",
+    pages = "567--584"
+}
+</pre></div>
+    
+    </div>
+
+    <h2>Abstract</h2>
+    <div class="publication-abstract">
+        <p>A vertex cover (VC) of a graph \(G\) is a subset of vertices in \(G\) such that at least one endpoint vertex of each edge in \(G\) is in this subset. The minimum VC (MVC) problem is to identify a VC of minimum size (cardinality) and is known to be NP-hard. Although many local search algorithms have been developed to solve the MVC problem close-to-optimally, their applicability on giant graphs (with no less than 100,000 vertices) is limited. For such graphs, there are two reasons why it would be beneficial to have linear-time-and-space algorithms that produce small VCs. Such algorithms can: (a) serve as preprocessing steps to produce good starting states for local search algorithms and (b) also be useful for many applications that require finding small VCs quickly. In this paper, we develop a new linear-time-and-space algorithm, called MVC-WP, for solving the MVC problem on giant graphs based on the idea of warning propagation, which has so far only been used as a theoretical tool for studying properties of MVCs on infinite random graphs. We empirically show that it outperforms other known linear-time-and-space algorithms in terms of sizes of produced VCs.</p>
+    </div>
+
+    
+    <h2>Giant Graph Benchmark Instances</h2>
+Giant graphs in DIMACS format used as benchmark instances are available for <a href="http://files.hong.me/papers/xu2018b-data">download</a>.
+
+<h2>Presentation</h2>
+
+
+<div class="presentation-wrapper-169">
+  <iframe width="100" height="75" src="//speakerdeck.com/player/b9c5ac23f6d64ed3b43819bf2091990d" frameborder="0" allowfullscreen></iframe>
+</div>
+
+
+
+
+    <h2>Full Text</h2>
+    <div>
+        <object data="http://files.hong.me/papers/xu2018b.pdf" type="application/pdf" width="100%" style="height:90vh">
+            <p>Your browser does not support viewing the PDF file inline. Please click the link below to download the file.</p>
+        </object>
+        <p>[<a href="http://files.hong.me/papers/xu2018b.pdf" download="xu2018b.pdf">download</a>]</p>
+    </div>
+
+    
+    
+
+
+        <!--End of body content-->
+
+        <footer id="footer">
+            © 2021         Hong Xu 
+            
+            
+        </footer>
+</div>
+</div>
+
+
+        <script src="../assets/js/all-nocdn.js"></script><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
+    </script><script src="//static.getclicky.com/js" type="text/javascript"></script><script type="text/javascript">try{ clicky.init(100990859); }catch(e){}</script>
+</body>
+</html>

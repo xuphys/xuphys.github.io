@@ -1,0 +1,5 @@
+Sitemap: http://www.hong.me/sitemapindex.xml
+
+User-Agent: *
+Disallow: /404.html
+Host: www.hong.me

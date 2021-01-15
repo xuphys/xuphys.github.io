@@ -1,0 +1,73 @@
+@media only screen and (max-width: 7.7in) {
+    #bio {clear: left}
+}
+
+@media only screen and (max-width: 4.99in) {
+    #wordcloud {width: 100%}
+}
+
+p {
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}
+
+#logo {
+    padding-right: 0.5em;
+}
+
+.video-wrapper {
+    position: relative;
+    width: 20cm;
+    padding-top: 11.25cm;
+}
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 20cm) {
+    .video-wrapper {
+        width: 100%;
+        padding-top: 56.25%;
+    }
+}
+
+.presentation-wrapper-169, .presentation-wrapper-43 {
+    position: relative;
+    width: 20cm;
+}
+
+.presentation-wrapper-169 {
+    padding-top: 11.25cm;
+}
+
+.presentation-wrapper-43 {
+    padding-top: 15cm;
+}
+
+.presentation-wrapper-169 iframe, .presentation-wrapper-43 iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 20cm) {
+    .presentation-wrapper-169, .presentation-wrapper-43 {
+        width: 100%;
+    }
+
+    .presentation-wrapper-169 {
+        padding-top: 56.25%;
+    }
+
+    .presentation-wrapper-43 {
+        padding-top: 75%;
+    }
+}

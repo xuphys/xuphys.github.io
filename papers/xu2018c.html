@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Towards Effective Deep Learning for Constraint Satisfaction Problems | Hong Xu (許弘)</title>
+<link href="../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="canonical" href="http://www.hong.me/papers/xu2018c.html">
+<link rel="icon" href="../images/wordcloud.png" sizes="16x16">
+<link rel="icon" href="../images/wordcloud.png" sizes="128x128">
+<!--[if lt IE 9]><script src="../assets/js/html5.js"></script><![endif]--><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script><style>
+    .publication-abstract {
+        text-align: justify;
+        hyphens: auto;
+        -webkit-hyphens: auto;
+        -moz-hyphens: auto;
+        -ms-hyphens:auto;
+     }
+    </style>
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-expand-md static-top mb-4
+navbar-dark
+bg-dark
+"><div class="container">
+<!-- This keeps the margins nice -->
+        <a class="navbar-brand" href="../">
+
+            <span id="blog-title">Hong Xu (許弘)</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="bs-navbar">
+            <ul class="navbar-nav mr-auto">
+<li class="nav-item">
+<a href="https://scholar.google.com/citations?user=CLG-HO8AAAAJ" class="nav-link">Google Scholar</a>
+                </li>
+<li class="nav-item">
+<a href="http://dblp.uni-trier.de/pers/hd/x/Xu_0003:Hong" class="nav-link">dblp</a>
+
+                
+            </li>
+</ul>
+<!-- DuckDuckGo custom search --><form method="get" id="search" action="https://duckduckgo.com/" class="navbar-form navbar-right">
+<input type="hidden" name="sites" value="http://www.hong.me/"><input type="hidden" name="k8" value="#444444"><input type="hidden" name="k9" value="#D51920"><input type="hidden" name="kt" value="h"><input type="text" name="q" maxlength="255" placeholder="Search…" class="span2" style="margin-top: 4px; border-radius: 0.4em;"><input type="submit" value="DuckDuckGo Search" style="visibility: hidden;">
+</form>
+<!-- End of custom search -->
+
+
+            <ul class="navbar-nav navbar-right"></ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+        
+        
+    <header class="page-header"><h1>Towards Effective Deep Learning for Constraint Satisfaction Problems</h1>
+    </header><div class="reference">
+    <p>
+    <strong>Hong Xu</strong>, Sven Koenig, and T. K. Satish Kumar.
+<a href="http://www.hong.me/papers/xu2018c.html"><strong>Towards effective deep learning for constraint satisfaction problems.</strong></a>
+In <em>Proceedings of the 24th International Conference on Principles and Practice of Constraint Programming (CP)</em>, 588–597. 2018.
+<a href="https://doi.org/10.1007/978-3-319-98334-9_38">doi:10.1007/978-3-319-98334-9_38</a>.
+            <br>[<a href="http://files.hong.me/papers/xu2018c.pdf">full text</a>] [<a href="http://files.hong.me/papers/xu2018c-slides.pdf">slides</a>] [<a href="http://files.hong.me/papers/xu2018c-poster.pdf">poster</a>] 
+            [<a href="javascript:void(0)" onclick="
+            (function(target, id) {
+              if ($('#' + id).css('display') == 'block')
+              {
+                $('#' + id).hide('fast');
+                $(target).text('BibTeX▼')
+              }
+              else
+              {
+                $('#' + id).show('fast');
+                $(target).text('BibTeX▲')
+              }
+            })(this, 'bibtex-xu2018c');">BibTeX▼</a>]
+            </p>
+<div id="bibtex-xu2018c" style="display:none"><pre>@inproceedings{xu2018c,
+    author = "Xu, Hong and Koenig, Sven and Kumar, T. K. Satish",
+    title = "Towards Effective Deep Learning for Constraint Satisfaction Problems",
+    year = "2018",
+    doi = "10.1007/978-3-319-98334-9\_38",
+    pages = "588--597",
+    booktitle = "Proceedings of the 24th International Conference on Principles and Practice of Constraint Programming (CP)",
+    customlinkslides = "http://files.hong.me/papers/xu2018c-slides.pdf",
+    customlinkposter = "http://files.hong.me/papers/xu2018c-poster.pdf"
+}
+</pre></div>
+    
+    </div>
+
+    <h2>Abstract</h2>
+    <div class="publication-abstract">
+        <p>Many attempts have been made to apply machine learning techniques to constraint satisfaction problems (CSPs). However, none of them have made use of the recent advances in deep learning. In this paper, we apply deep learning to predict the satisfiabilities of CSPs. To the best of our knowledge, this is the first effective application of deep learning to CSPs that yields \(&gt;99.99\%\) prediction accuracy on random Boolean binary CSPs whose constraint tightnesses or constraint densities do not determine their satisfiabilities. We use a deep convolutional neural network on a matrix representation of CSPs. Since it is NP-hard to solve CSPs, labeled data required for training are in general costly to produce and are thus scarce. We address this issue using the asymptotic behavior of generalized Model A, a new random CSP generation model, along with domain adaptation and data augmentation techniques for CSPs. We demonstrate the effectiveness of our deep learning techniques using experiments on random Boolean binary CSPs. While these CSPs are known to be in P, we use them for a proof of concept.</p>
+    </div>
+
+    
+    <h2>Presentation</h2>
+
+
+<div class="presentation-wrapper-169">
+  <iframe width="100" height="75" src="//speakerdeck.com/player/229fbd82431b4a2085bc9cfc58fe8e37" frameborder="0" allowfullscreen></iframe>
+</div>
+
+
+
+
+    <h2>Full Text</h2>
+    <div>
+        <object data="http://files.hong.me/papers/xu2018c.pdf" type="application/pdf" width="100%" style="height:90vh">
+            <p>Your browser does not support viewing the PDF file inline. Please click the link below to download the file.</p>
+        </object>
+        <p>[<a href="http://files.hong.me/papers/xu2018c.pdf" download="xu2018c.pdf">download</a>]</p>
+    </div>
+
+    
+    
+
+
+        <!--End of body content-->
+
+        <footer id="footer">
+            © 2021         Hong Xu 
+            
+            
+        </footer>
+</div>
+</div>
+
+
+        <script src="../assets/js/all-nocdn.js"></script><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element){var i=element.getElementsByTagName('img')[0];return i===undefined?'':i.alt;}});
+    </script><script src="//static.getclicky.com/js" type="text/javascript"></script><script type="text/javascript">try{ clicky.init(100990859); }catch(e){}</script>
+</body>
+</html>
